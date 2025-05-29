@@ -1,0 +1,17 @@
+:root {
+  --olx-blue: #3a77ff;
+  --olx-dark-blue: #002f34;
+  --olx-gray: #f2f4f5;
+  --olx-dark-gray: #ebeeef;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background-color: var(--olx-gray);
+}
