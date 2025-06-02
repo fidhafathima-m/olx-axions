@@ -54,7 +54,7 @@ function Header() {
         {user ? (
           <div className="loginPage">
             <div className="userDropdown">
-              <span className="userName">{user.name}</span>
+              <span className="userName">{user.name || 'Guest'}</span>
               <div className="dropdownContent">
                 <a onClick={logout} className="logout">Logout</a>
               </div>

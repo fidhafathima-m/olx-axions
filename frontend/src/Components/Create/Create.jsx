@@ -44,7 +44,7 @@ const Create = () => {
     setSubmitting(true);
     const productData = {
       ...form,
-      sellerName: user.name,
+      sellerName: user.name || 'Guest',
       sellerPhone: user.phone
     };
     const res = await createProduct(productData);
