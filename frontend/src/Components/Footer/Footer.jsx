@@ -1,7 +1,9 @@
 import React from 'react';
 import './Footer.css';
+import {useAuth} from '../../context/auth'
 
 function Footer() {
+  const {user} = useAuth();
   return (
     <div className="footerParentDiv">
       <div className="content">
@@ -100,6 +102,7 @@ function Footer() {
           <p>Other Countries: Pakistan - South Africa - Indonesia</p>
         </div>
         <div className="footer-bottom-right">
+          <p>{user.name}</p>
           <p>Free Classifieds in India. © 2006-2024 OLX</p>
         </div>
       </div>
